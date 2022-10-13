@@ -11,7 +11,7 @@
 
                  <label for="" class="form-label">Name</label>
 
-                 <input type="text" class="form-control">
+                 <input type="text" class="form-control" name="name" [(ngModel)]="name">
 
                 </div>
 
@@ -19,7 +19,7 @@
 
                     <label for="" class="form-label">Friend Name</label>
 
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="friendName" [(ngModel)]="friendName">
 
                 </div>
 
@@ -27,7 +27,7 @@
 
                     <label for="" class="form-label">Friend Nick Name</label>
 
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="friendNickName" [(ngModel)]="friendNickName">
 
                 </div>
                 
@@ -36,7 +36,7 @@
 
                     <label for="" class="form-label">Describe Your Friend</label>
 
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" [name]="DescribeYourFriend" [(ngModel)]="DescribeYourFriend"></textarea>
 
                 </div>
 
@@ -44,7 +44,7 @@
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <button class="btn btn-success"> Submit</button>
+                    <button class="btn btn-success" (click)="readValues()"> Submit</button>
 
                 </div>
 
